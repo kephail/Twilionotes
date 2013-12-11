@@ -39,7 +39,7 @@
 	function sendSMS($d, $da) {
 		?>
 		<Response>
-		<SMS><?php echo "You've added $d to your to-do-list. You will be reminded at $da. Call 01143031702 to hear your to-dos"; ?></SMS>
+		<SMS><?php echo "You've added $d to your to-do-list. You will be reminded at $da. Visit http://www.everythingrob.co.uk/Twilionotes. Call 01143031702 to hear your to-dos"; ?></SMS>
 	</Response>
 	<?php
 	}
