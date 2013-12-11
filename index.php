@@ -12,7 +12,7 @@ $currentDate = $currentDate->format('d-m-y');
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Notes - Twillio</title>
+	<title>To-Do App • Twilio</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
