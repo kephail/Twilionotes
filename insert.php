@@ -36,17 +36,8 @@
 	}
 	$date .= ":00";
 	mysql_query("INSERT INTO notes (NoteDesc, NoteTime) VALUES ('$descrip', '$date')");
-	function sendSMS($d, $da) {
-		?>
+	?>
 		<Response>
-		<SMS><?php echo "You've added $d to your to-do-list. You will be reminded at $da. Visit http://www.everythingrob.co.uk/Twilionotes. Call 01143031702 to hear your to-dos"; ?></SMS>
-	</Response>
-	<?php
-	}
-	sendSMS($descrip, $date);
-}
-?>
-<!-- <Response>
-    <SMS><?php //echo $help; ?></SMS>
-    <SMS><?php //echo "You've added $descrip to your to-do-list. You will be reminded at $date. Call 01143031702 to hear your to-dos"; ?></SMS>
-</Response> -->
+		  <SMS><?php echo "You've added $descrip to your to-do-list. You will be reminded at $date. Visit http://www.everythingrob.co.uk/Twilionotes. Call 01143031702 to hear your to-dos"; ?></SMS>
+	    </Response>
+	<?php } ?>
