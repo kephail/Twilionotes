@@ -33,11 +33,11 @@
     	$date = ltrim($date, ", ");
 	} elseif($date[0] == ',') {
 		$date = ltrim($date, ",");
-	}
+	};
 	$date .= ":00";
 	mysql_query("INSERT INTO notes (NoteDesc, NoteTime) VALUES ('$descrip', '$date')");
 	?>
 		<Response>
 		  <SMS><?php echo "You've added $descrip to your to-do-list. You will be reminded at $date. Visit http://www.everythingrob.co.uk/Twilionotes. Call 01143031702 to hear your to-dos"; ?></SMS>
 	    </Response>
-	<?php } ?>
+	<?php }; ?>
